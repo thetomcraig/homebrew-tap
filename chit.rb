@@ -3,7 +3,7 @@ class Chit < Formula
   homepage "https://github.com/thetomcraig/Chit"
   url "https://github.com/thetomcraig/chit/blob/main/archive/chit.0.1.2.tar.gz?raw=true"
   sha256 "98d222fcffa115545a7824a47a5275c21bb079f02cea78571ab8250c727da26e"
-  license "BSD-3-Clause"
+  license "MIT"
 
   bottle :unneeded
 
