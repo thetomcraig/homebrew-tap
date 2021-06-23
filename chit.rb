@@ -3,8 +3,8 @@ class Chit < Formula
   CONFIG_DIR = "${HOME}/.config/chit"
   desc "Change your terminal color schemes"
   homepage "https://github.com/thetomcraig/Chit"
-  url "https://github.com/thetomcraig/chit/blob/main/archive/chit.0.1.7.tar.gz?raw=true"
-  sha256 "3a136dfd4d6b971d5b08b7dca6a2b3cf777954e0087042590af8ad5bfdb15f70"
+  url "https://github.com/thetomcraig/chit/blob/main/archive/chit.0.1.8.tar.gz?raw=true"
+  sha256 "71359bc3502abe80d57be528fdbdd23d0018b4868266eaf4060c93dc70270e06"
   license "MIT"
 
   bottle :unneeded
