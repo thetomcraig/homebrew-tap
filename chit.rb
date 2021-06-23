@@ -13,7 +13,7 @@ class Chit < Formula
     system "./build"
     bin.install "chit"
 
-    system "src/configure"
+    system "./configure"
   end
 
   def post_install
