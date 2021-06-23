@@ -17,14 +17,11 @@ class Chit < Formula
   def post_install
     # WIP write this to replace the "setup" command
     #
-    CONFIG_DIR.mkpath
-    (CONFIG_DIR/"theme_definitions").mkpath
-    (CONFIG_DIR/"kitty_themes").mkpath
-
+    system "mkdir", "-p", CONFIG_DIR, "theme_definitions"
+    system "mkdir", "-p", CONFIG_DIR, "kitty_themes"
 
     system "cp", "example_theme_definitions", CONFIG_DIR/"theme_definitions"
     system "cp", "kitty_themes", CONFIG_DIR/"kitty_themes"
-
 
     system "echo", ">", "'dark'", CONFIG_DIR/"currrent_theme"
     system "echo", ">", "''", CONFIG_DIR/"tmux_theme.conf"
