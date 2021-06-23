@@ -17,8 +17,8 @@ class Chit < Formula
   def post_install
     # WIP write this to replace the "setup" command
     #
-    system "mkdir", "-p", CONFIG_DIR, "theme_definitions"
-    system "mkdir", "-p", CONFIG_DIR, "kitty_themes"
+    system "mkdir", "-p", CONFIG_DIR, "/theme_definitions"
+    system "mkdir", "-p", CONFIG_DIR, "/kitty_themes"
 
     system "cp", "example_theme_definitions", CONFIG_DIR/"theme_definitions"
     system "cp", "kitty_themes", CONFIG_DIR/"kitty_themes"
