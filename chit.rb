@@ -17,8 +17,9 @@ class Chit < Formula
   def post_install
     # WIP write this to replace the "setup" command
     #
-    system "mkdir", "-p", CONFIG_DIR, "/theme_definitions"
-    system "mkdir", "-p", CONFIG_DIR, "/kitty_themes"
+    #mkdir_p "#{var}/log/nexus" unless (var/"log/nexus").exist?
+    mkdir_p CONFIG_DIR/"theme_definitions"
+    mkdir_p CONFIG_DIR/"kitty_themes"
 
     system "cp", "example_theme_definitions", CONFIG_DIR/"theme_definitions"
     system "cp", "kitty_themes", CONFIG_DIR/"kitty_themes"
