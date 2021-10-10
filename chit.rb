@@ -9,9 +9,11 @@ class Chit < Formula
   bottle :unneeded
 
   def install
-    system "./build"
+    # system "./build"
+    cp chit.sh chit
     bin.install "chit"
-    bin.install "chit2"
+    mkdir_p theme_definitions
+    cp_r "example_theme_definitions", theme_definitions 
   end
 
 end
