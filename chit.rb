@@ -2,8 +2,8 @@
 class Chit < Formula
   desc "Change your terminal color schemes"
   homepage "https://github.com/thetomcraig/Chit"
-  url "https://github.com/thetomcraig/chit/blob/main/archive/chit.0.2.9.tar.gz?raw=true"
-  sha256 "2bd506ce5c6baa9feea563b4ff47b446ee6f9b5b26e89f01c610333bd31c0211"
+  url "https://github.com/thetomcraig/chit/blob/main/archive/chit.0.3.0.tar.gz?raw=true"
+  sha256 "01ffb3dca98e99332184671c53c1cc2c6b665c4b3e2bd67f6402a3df43830816"
   license "MIT"
 
   bottle :unneeded
@@ -11,6 +11,7 @@ class Chit < Formula
   def install
     # Install binary
     bin.install "chit.sh" => "chit"
+    bin.install "version"
     # Install the example themes into share,
     # so they will be removed on formula uninstall
     share.install "example_theme_definitions"
