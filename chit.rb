@@ -9,15 +9,14 @@ class Chit < Formula
   def install
     # Install binary
     bin.install "chit.sh" => "chit"
-    # The "version" file is used so chit knows what version of itself is installed
-    bin.install "version"
 
     # Install the example themes into share,
     # so they will be removed on formula uninstall
-    share.install "example_theme_definitions"
-    share.install "iterm"
     # When chit's setup is run,
     # these will be copied over to the config folder
+    share.install "example_theme_definitions"
+
+    share.install "iterm"
   end
 
 end
