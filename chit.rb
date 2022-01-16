@@ -17,6 +17,7 @@ class Chit < Formula
     # Install the example themes into share,
     # so they will be removed on formula uninstall
     share.install "example_theme_definitions"
+    share.install "iterm"
     # When chit's setup is run,
     # these will be copied over to the config folder
   end
