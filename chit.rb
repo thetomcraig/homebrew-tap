@@ -2,8 +2,8 @@
 class Chit < Formula
   desc "Change your terminal color schemes"
   homepage "https://github.com/thetomcraig/Chit"
-  url "https://github.com/thetomcraig/chit/blob/main/archive/chit.0.3.2.tar.gz?raw=true"
-  sha256 "e5b5ecb22a71ca96609788e3b519a2f9ac748238f13e90f846395bd695b97da5"
+  url "https://github.com/thetomcraig/chit/blob/main/archive/chit.0.3.3.tar.gz?raw=true"
+  sha256 "28daec792395e16fcc12e23a3f3267c819947c92b425b2a25c03dc4010728624"
   license "MIT"
 
   def install
